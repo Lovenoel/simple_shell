@@ -22,7 +22,9 @@ int is_delim(char c, char *delim)
 	while (*delim)
 		if (*delim++ == c)
 			return (1);
+	return (0);
 }
+
 /**
 * _isalpha - checks for alphabetic character
 * @c: The character to input
@@ -33,6 +35,8 @@ int _isalpha(int c)
 	if ((c >= 'a' && c <= 'z')
 		|| (c >= 'A' && c <= 'Z'))
 		return (1);
+	else
+		return (0);
 }
 
 /**
